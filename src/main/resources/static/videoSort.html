@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频分类页</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.regex.js"></script>
+    <link rel="stylesheet" href="css_w/videoSort.css">
+    <link rel="stylesheet" href="css_w/public.css">
+</head>
+<body>
+<!--头部导航栏-->
+<div class="public_head">
+    <ul>
+        <li class="logo"><a href="http://www.youxiake.com" target="_blank" style="background-image: url(images_w/logo_01.png);"></a></li>
+        <li><a href="http://www.youxiake.com">首页</a></li>
+        <li><a href=" https://bbs.youxiake.com " id="shequ">社区</a></li>
+        <li><a href=" https://bbs.youxiake.com/mdd " class="forum">目的地</a></li>
+        <li><a href="http://www.youxiake.com/gonglue" class="forum">攻略</a></li>
+        <li><a href="http://www.youxiake.com/film" style="color: orange;">视频</a></li>
+        <li><a href="http://www.youxiake.com/leader" target="_blank">领队</a></li>
+        <li><a href="http://www.youxiake.net" target="_blank">摄影</a></li>
+        <li class="mugua_box">
+            <a class="mugua_a" href="javascript:;">旅游</a>
+            <div class="mugua_ul">
+                <a href="http://www.youxiake.com/around" target="_blank" class="mugua_li">周边游</a>
+                <a href="http://www.youxiake.com/cn" target="_blank" class="mugua_li">国内游</a>
+                <a href="http://www.youxiake.com/out" target="_blank" class="mugua_li">出境游</a>
+                <a href="http://www.youxiake.com/wanle" target="_blank" class="mugua_li">当地玩乐</a>
+                <a href="http://www.youxiake.com/qinzi" target="_blank" class="mugua_li">亲子游</a>
+                <a href="http://www.youxiake.com/huwai" target="_blank" class="mugua_li">户外游</a>
+                <a href="http://www.youxiake.com/dingzhi" target="_blank" class="mugua_li">定制游</a>
+            </div>
+        </li>
+        <li><a href="http://www.youxiake.com/app/" target="_blank">APP</a></li>
+        <li style="float: right;"><a href="http://www.youxiake.com/reg?refer=http://www.youxiake.com/film/" target="_blank">注册</a></li>
+        <li style="float: right;"><a href="http://www.youxiake.com/login?refer=http://www.youxiake.com/film/" target="_blank">登录</a></li>
+    </ul>
+</div>
+<!--主体部分-->
+<div id="newyxk" class="newfilm" module="newfilm" child="filmSearch">
+<!--分类搜索框导航栏-->
+    <div class="newfilm_header">
+        <div class="newfilm_sort">
+            <span class="mugua_box">
+                <a class="mugua_a">小视频</a>
+                <div class="mugua_ul_01">
+                    <a href="http://www.youxiake.com/around" target="_blank" class="mugua_li_01">全部</a>
+                    <a href="http://www.youxiake.com/cn" target="_blank" class="mugua_li_01">小视频</a>
+                    <a href="http://www.youxiake.com/out" target="_blank" class="mugua_li_01">旅行</a>
+                    <a href="http://www.youxiake.com/wanle" target="_blank" class="mugua_li_01">活动</a>
+                    <a href="http://www.youxiake.com/qinzi" target="_blank" class="mugua_li_01">访谈</a>
+                    <a href="http://www.youxiake.com/huwai" target="_blank" class="mugua_li_01">航拍</a>
+                    <a href="http://www.youxiake.com/dingzhi" target="_blank" class="mugua_li_01">延时</a>
+                </div>
+            </span>
+            <span class="js-sort focus" data-sort="0">最新发布</span>
+            <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+            <span class="js-sort" data-sort="1">最多评论</span>
+            <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+            <span class="js-sort" data-sort="2">最多观看</span>
+        </div>
+        <div class="newfilm_search">
+            共有 <span>53</span> 个视频
+            <input class="js-search_input" type="text" maxlength="20" placeholder="搜索视频">
+            <div class="js-search_button"></div>
+        </div>
+    </div>
+<!--视频主体-->
+    <div class="newfilm_container">
+        <div class="newfilm_box">
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1182" class="recommend">
+                <img src="images_w/yuanchuang01.png" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-08-06</div>
+                    <div class="datetime_time">01′25″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>穿越生命禁区-塔克拉玛干沙漠</div>
+                    <div class="content_count">播放&nbsp;&nbsp;7.13万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;27</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1181" class="recommend">
+                <img src="images_w/yuanchuang02.png" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-07-29</div>
+                    <div class="datetime_time">02′40″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>印尼东爪哇-在世界尽头徘徊</div>
+                    <div class="content_count">播放&nbsp;&nbsp;9.72万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;30</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1180" class="recommend">
+                <img src="images_w/yuanchuang03.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-07-22</div>
+                    <div class="datetime_time">01′27″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>黄龙岛-悠然隐世的绝美小岛</div>
+                    <div class="content_count">播放&nbsp;&nbsp;10.42万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;24</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1179" class="recommend">
+                <img src="images_w/yuanchuang04.png" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-07-18</div>
+                    <div class="datetime_time">02′36″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>科莫多岛-独属于勇者的浪漫与激情</div>
+                    <div class="content_count">播放&nbsp;&nbsp;9.73万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;31</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1176" class="recommend">
+                <img src="images_w/yuanchuang05.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-06-28</div>
+                    <div class="datetime_time">01′12″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>游侠客全球踩线计划招募了！</div>
+                    <div class="content_count">播放&nbsp;&nbsp;11.43万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;57</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1175" class="recommend">
+                <img src="images_w/yuanchuang06.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-06-25</div>
+                    <div class="datetime_time">01′18″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>鸟瞰梵净山</div>
+                    <div class="content_count">播放&nbsp;&nbsp;14.36万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;51</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1174" class="recommend">
+                <img src="images_w/yuanchuang07.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-06-21</div>
+                    <div class="datetime_time">02′10″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>神秘朝鲜-三日探寻灰色国度</div>
+                    <div class="content_count">播放&nbsp;&nbsp;10.82万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;44</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1173" class="recommend">
+                <img src="images_w/yuanchuang08.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-06-17</div>
+                    <div class="datetime_time">01′04″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>仙本那-现实版“天空之城”</div>
+                    <div class="content_count">播放&nbsp;&nbsp;9.19万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;46</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1090" class="recommend">
+                <img src="images_w/hangpai_guizho.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2019-04-04</div>
+                    <div class="datetime_time">00′50″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>贵州花事预告！</div>
+                    <div class="content_count">播放&nbsp;&nbsp;11.34万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;42</div>                    </div>
+            </a>
+            <a target="_blank" href="http://www.youxiake.com/film/detail?id=1090" class="recommend">
+                <img src="images_w/hangpai_youcaihua.jpg" class="recommend_pic">
+                <div class="recommend_datetime">
+                    <div class="datetime_date">2018-12-04</div>
+                    <div class="datetime_time">00′23″</div>
+                </div>
+                <div class="recommend_content">
+                    <div class="content_title"><span>原创</span>游侠客带你玩浦江 - 樱花油菜花还有3D画！</div>
+                    <div class="content_count">播放&nbsp;&nbsp;11.15万&nbsp;&nbsp;|&nbsp;&nbsp;评论&nbsp;&nbsp;49</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+<!--视频页数-->
+    <div class="newfilm_pages">
+        共3页/53条
+        <span class="page--1 js-firstPage">首页</span>
+        <span class="page--2 js-prevPage">上一页</span>
+        <span class="page focus">1</span><span class="page">2</span><span class="page">3</span><span class="page--2 js-nextPage" style="display: inline-block;">下一页</span>
+        <span class="page--1 js-lastPage" style="display: inline-block;">末页</span>
+    </div>
+
+    <div class="newfilm_none">
+        <div class="none_img"></div>
+        <div class="none_text">没找到您想看的视频，试试其他关键词吧</div>
+    </div>
+    <form id="newfilm_form" action="http://www.youxiake.com/film/category" method="get">
+        <input id="newfilm_category" type="hidden" value="" name="id">
+
+        <input id="newfilm_sort" type="hidden" value="" name="sort">
+        <input id="newfilm_page" type="hidden" value="" name="page">
+
+    </form>
+</div>
+<!--底部-->
+<div class="b_floor">
+    <div class="l_wrapper">
+        <div class="m_unit_b2">
+            <div class="footerInfo">
+                <ul class="weima">
+                    <li>
+                        <img src="images_w/wechat01.jpg" width="77" height="77">
+                        <p>神游网公众号</p>
+                    </li>
+                    <li>
+                        <img src="images_w/wechat02.jpeg" width="78" height="79">
+                        <p>APP下单更优惠</p>
+                    </li>
+                </ul>
+                <p>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_关于游侠客" rel="nofollow" href="javascript:void (0)" target="_blank">关于游侠客</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_游侠客的故事" rel="nofollow" href="javascript:void (0)" target="_blank">游侠客的故事</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_联系游侠客" rel="nofollow" href="javascript:void (0)" target="_blank">联系游侠客</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_游侠客招聘" rel="nofollow" href="javascript:void (0)" target="_blank">游侠客招聘</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_意见反馈" rel="nofollow" href="javascript:void (0)" target="_blank">意见反馈</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_使用协议" rel="nofollow" href="javascript:void (0)" target="_blank">使用协议</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_隐私政策" rel="nofollow" href="javascript:void (0)" target="_blank">隐私政策</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_交换链接" rel="nofollow" href="javascript:void (0)" target="_blank">交换链接</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_帮助中心" rel="nofollow" href="javascript:void (0)" target="_blank">帮助中心</a>
+                    <a data-trace="页面底部|页面底部_点击|页面底部_网站地图" rel="nofollow" href="javascript:void (0)" target="_blank">网站地图</a>
+                </p>
+                <p>
+                    <span>浙ICP备 09011712 号-1</span>
+                    <span>浙公网安备 33010602002105号</span>
+                    <span><a href="javascript:void (0)" rel="nofollow" target="_blank">营业执照</a></span>
+                    <span>神仙游国际旅行社有限公司</span>
+                    <span>杭州途游电子商务有限公司</span>
+                    <span>许可证编号：L-ZJ-CJ00161</span>
+                </p>
+                <p>©  2019 youxiake.com 版权所有法律顾问：浙江四海方圆律师事务所 傅林放 杭州市旅游投诉电话：0571-96123 投诉及紧急事件联系电话：400-670-6300转5</p>
+                <p>旅游预订电话(免长途费)：400-670-6300，公司总部地址：浙江省杭州市西湖区教工路198号浙商大创业园D幢3楼，投诉建议邮箱：jianyi@youxiake.com</p>
+            </div>
+            <div class="friendLines">
+                <div class="footerImages clearfix foot-ext">
+                    <a class="footer-ext-s2" href="javascript:;" onclick="window.open('http://net.china.com.cn/index.htm')" title="不良信息举报中心"></a>
+                    <a class="footer-ext-s3" href="javascript:;" onclick="window.open('http://union.rising.com.cn/InfoManage/attestation.aspx?p0=W86D47XQRcVtTOYJMVjfRn-NIHQ6TlFupjQAkt-jEyg=')" title="瑞信安全认证"></a>
+                    <a class="footer-ext-s4" href="javascript:;" onclick="window.open('http://www.12312.gov.cn')" title="12321垃圾信息举报中心"></a>
+                    <a href="javascript:;" onclick="window.open('http://fun.alipay.com/down/index.htm?cid=shwaibusj&amp;pid=Q_ANDROID_SHWAIBUSJ')"><img width="116" height="47" src="http://static.youxiake.com/new/Public/Images/alipay201305.png" alt="支付宝"></a>
+                    <a class="footer-ext-s5" href="javascript:;" onclick="window.open('http://www.cyberpolice.cn/')" title="网络110报警服务"></a>
+                    <a class="footer-ext-s6" href="javascript:;" onclick="window.open('http://122.224.75.236/wzba/login.do?method=hdurl&amp;doamin=http://www.youxiake.com&amp;id=330106000183104&amp;SHID=1223.0AFF_NAME=com.rouger. gs.main.UserInfoAff&amp;AFF_ACTION=qyhzdetail&amp;PAGE_URL=ShowDetail')" title="网上标识信息"></a>
+                    <a class="footer-ext-s7" href="javascript:;" onclick="window.open('http://bbs.ifeng.com/special/bbs100/lty.shtml?bbsid=1912')" title="全球中文论坛100强"></a>
+                    <a href="http://www.anquan.org/authenticate/cert/?site=www.youxiake.com&amp;sn=2013121115015380199" target="_blank" style="background:none"><img src="http://static.youxiake.com/new/Public/Images/kx_124x47.png" alt="安全联盟" height="47"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>
